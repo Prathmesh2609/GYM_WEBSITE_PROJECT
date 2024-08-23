@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Web Page</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </link>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lacquer&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yeon+Sung&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="nav_parent w100 fl">
+        <div class="container_v1 nav_flex_p">
+            <div class="logo">
+                <h2 class="logo_txt" align="center">Fitness<br>Fever</h2>
+            </div>
+            <ul class="nav_v2_side">
+                <li>
+                    <a href="#" class="navLinks" onclick="window.location.href ='index.html' ">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="navLinks"onclick="window.location.href='index.html'">About</a>
+                </li>
+                <li>
+                    <a href="#" class="navLinks" onclick="window.location.href = 'index2.html'">Shopping</a>
+                </li>
+                <li>
+                    <a href="#contact" class="navLinks" onclick="window.location.href='index.html'">Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="navLinks" onclick="window.location.href ='login.html'">LogIn </a>
+                </li>
+               <li><a><i class="fa-solid fa-cart-shopping"></i></a></li>
+               <!-- cart section -->
+                 <!-- cart 1 -->
+                    <div class="cart1">
+                        <h2 class="cart-title">Your Cart</h2>
+                        <div class="cart-content"></div>
+                        <div class="cart-box">
+                            <img src="./images/dumbell.jpg" alt="" class="cart-img"/>
+                            <div class="detail-box">
+                                <div class="cart-product-title">Dumbells</div>
+                                <div class="cart-price">₹500</div>
+                                <input type="number" name="" id="cartQuantity" value="1" class="cart-quantity"/>
+                            </div>
+                            <!--Remove Item-->
+                            <i class="fa-solid fa-trash cart-remove"></i>    
+                        </div>
+                        <!--Total-->
+                        <div class="total">
+                            <div class="total-title">Total</div>
+                            <div class="total-price" id="totalAmount">₹500</div>
+                        </div>
+                        <!--Buy Button-->
+                        <button type="button" class="btn-buy" onclick="window.location.href='payment.html'">Pay Now</button>
+                        <!--Close Cart-->
+                        <i class="fa-solid fa-xmark" id="close-cart"></i>
+                    </div>
+                    <!-- cart 1 end -->
+                     <!-- cart 2 -->
+                    <div class="cart2">
+                        <h2 class="cart-title">Your Cart</h2>
+                        <div class="cart-content2"></div>
+                        <div class="cart-box2">
+                            <img src="./images/Protien.jpg" alt="" class="cart-img"/>
+                            <div class="detail-box">
+                                <div class="cart-product-title">Protients</div>
+                                <div class="cart-price2">₹2000</div>
+                                <input type="number" name="" id="cartQuantity" value="1" class="cart-quantity2"/>
+                            </div>
+                            <!--Remove Item-->
+                            <i class="fa-solid fa-trash cart-remove"></i>    
+                        </div>
+                        <!--Total-->
+                        <div class="total">
+                            <div class="total-title">Total</div>
+                            <div class="total-price2" id="totalAmount2">₹2000</div>
+                        </div>
+                        <!--Buy Button-->
+                        <button type="button" class="btn-buy" onclick="window.location.href='payment.html'">Pay Now</button>
+                        <!--Close Cart-->
+                        <i class="fa-solid fa-xmark" id="close-cart2"></i>
+                    </div>
+                    <!-- cart 2 end -->
+
+            </ul>
+            <div class="nav_p">
+                <div id="nav-icon2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Navbar -->
+    <!-- section 1 -->
+    <div class="w100 fl overf sec_spacing_top" id="contact">
+        <div class="container_v1 ">
+            <div class="w100 fl card_parent">
+                <div class="card_v1 mobile_100">
+                    <div class="icon_p">
+                        <img src="./images/dumbell.jpg" width="200px" height="150px">
+                    </div>
+                    <p class="box-address"> Dumbells</p>
+                    <p class="rate">500 rs</p>
+                    <p class="box-contain1"><button class="addcard" id="cart-icon1" onclick="totalclick(1)">ADD TO CART</button></p>
+                </div>
+                <div class="card_v1 mobile_100">
+                    <div class="icon_p">
+                        <img src="./images/Protien.jpg" width="200px" height="150px">
+                    </div>
+                    <p class="box-address">Protien Powder</p>
+                    <p class="rate">2000 rs</p>
+                    <p class="box-contain1"><button class="addcard" id="cart-icon2" onclick="totalclick(1)">ADD TO CART</button></p>
+                </div>
+                <div class="card_v1 mobile_100">
+                    <div class="icon_p">
+                        <img src="./images/barbell.png" width="200px" height="150px">
+                    </div>
+                    <p class="box-address">Barbell</p>
+                    <p class="rate">3500 rs</p>
+                    <p class="box-contain1"><button class="addcard" onclick="totalclick(1)">ADD TO CART</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w100 fl overf" id="contact2">
+        <div class="container_v1 ">
+            <div class="w100 fl card_parent">
+                <div class="card_v1 mobile_100">
+                    <div class="icon_p">
+                        <img src="./images/kettleBell.jpg" width="200px" height="150px">
+                    </div>
+                    <p class="box-address">kettle Bell</p>
+                    <p class="rate">400 rs</p>
+                    <p class="box-contain1"><button class="addcard" onclick="totalclick(1)">ADD TO CART</button></p>
+                </div>
+                <div class="card_v1 mobile_100">
+                    <div class="icon_p">
+                        <img src="./images/Cycle.jpg" width="200px" height="150px">
+                    </div>
+                    <p class="box-address">Cycle</p>
+                    <p class="rate">30000 rs</p>
+                    <p class="box-contain1"><button class="addcard" onclick="totalclick(1)">ADD TO CART</button></p>
+                </div>
+                <div class="card_v1 mobile_100">
+                    <div class="icon_p">
+                        <img src="./images/absmachine.jpg" width="200px" height="150px">
+                    </div>
+                    <p class="box-address">Abs Machine</p>
+                    <p class="rate">10000 rs</p>
+                    <p class="box-contain1"><button class="addcard" onclick="totalclick(1)">ADD TO CART</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="w100 fl overf " id="contact3">
+        <div class="container_v1 ">
+            <div class="w100 fl card_parent">
+                <div class="card_v1 mobile_100">
+                    <div class="icon_p">
+                        <img src="./images/skippingrope.jpg" width="200px" height="150px">
+                    </div>
+                    <p class="box-address">Skipping Rope</p>
+                    <p class="rate">300 rs</p>
+                    <p class="box-contain1"><button class="addcard" onclick="totalclick(1)">ADD TO CART</button></p>
+                </div>
+                <div class="card_v1 mobile_100">
+                    <div class="icon_p">
+                        <img src="./images/gymball.jpg" width="200px" height="150px">
+
+                    </div>
+                    <p class="box-address">Gym Ball</p>
+                    <p class="rate">700 rs</p>
+                    <p class="box-contain1"><button class="addcard" onclick="totalclick(1)">ADD TO CART</button></p>
+                </div>
+                <div class="card_v1 mobile_100">
+                    <div class="icon_p">
+                       <img src="./images/handgrip.jpg" width="200px" height="150px">
+
+                    </div>
+                    <p class="box-address">Hand Grip</p>
+                    <p class="rate">400 rs</p>
+                    <p class="box-contain1"><button class="addcard" onclick="totalclick(1)">ADD TO CART</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banners of machine -->
+    <section class="gallery" id="gallery">
+     <h2>Workout Gallery</h2>
+    <div class="content">
+         <div class="box wow slideInLeft">
+             <img src="images/gallery1.jpg" alt="gallery" />
+         </div>
+         <div class="box wow slideInRight">
+             <img src="images/gallery2.jpg" alt="gallery" />
+         </div>
+         <div class="box wow slideInLeft">
+             <img src="images/gallery3.jpg" alt="gallery" />
+         </div>
+         <div class="box wow slideInRight">
+             <img src="images/gallery4.jpg" alt="gallery" />
+         </div>
+    </div>
+  </section>
+    <!-- footer -->
+    <div class="w100 fl overf">
+        <div class="foot sec_spacing_top">
+            <div class="contain">
+                <div class="row">
+                <div class="f-about footer-col">
+                    <h3>About</h3>
+                    <p>Being physically and mentally fit is necessary to live a happy, long life. Exercise is one of the
+                    best ways to keep a person healthy.Hence, it is always best to find a workout routine no matter how
+                    busy you are.
+                    </p>
+                </div>
+                <!-- end -->
+                <div class="f-links footer-col">
+                    <h3 class="f-title">Links</h3>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                            <a href="#">Home</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                            <a href="#">Shopping</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                            <a href="#">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end -->
+                <div class="f-services footer-col">
+                    <h3 class="f-title">Services</h3>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                            <a href="#">Web Design</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                            <a href="#">Web Development</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                            <a href="#">Mern Project</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                            <a href="#">Online payment</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                            <a href="#">Home devilery</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end -->
+                <div class="f-question footer-col">
+                    <h3 class="f-title"> Have a question </h3>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <a href=""> Mumbai, India </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <a href="tel:+919673985459"> +919673985459 </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <a href="mailto:fitnessfever@gmail.com">fitnessfever@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- end footer -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="./js/custom.js"></script></body>
+        <script src="./js/cart.js"></script></body>
+</html>
+</html>
+            
